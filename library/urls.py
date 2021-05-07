@@ -12,3 +12,4 @@ urlpatterns = [
 ]
 
 handler404 = 'bookshelf.views.not_found_404'
+handler500 = 'adoption.views.server_error_500'
