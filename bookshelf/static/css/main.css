@@ -47,6 +47,19 @@ ul li {
     margin: 1rem;
 }
 
+.book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+li {
+    display: inline-block;
+}
+
 li a { color: indianred; }
 
 input, button {

@@ -5,7 +5,11 @@
 <ul>
     {% for book in books %}
     <li>
-        {{ book.name }}
+        <div class="book-container">
+            {{ book.name }}
+            <img src="https://www.adazing.com/wp-content/uploads/2019/02/open-book-clipart-18-300x300.png" width="50"
+                height="50">
+        </div>
     </li>
     {% endfor %}
 
