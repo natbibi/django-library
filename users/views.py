@@ -14,3 +14,5 @@ def register(req):
         form = UserSignupForm()
     data = {'form': form}
     return render(req, 'signup.html', data)
+
+# def login(def)
