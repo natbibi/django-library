@@ -1,9 +1,10 @@
 # adoption/views.py
 from django.http import HttpResponse
+from django.shortcuts import redirect, render
 from .models import Book
 
 def index(req):
-    return HttpResponse("<h1>Hello! Here are all the books who need adopting!<h1>")
+    return render(req, 'base.html') 
 
 def show(req, id):
     book = Book.objects.get(pk=id)
