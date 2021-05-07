@@ -1,10 +1,15 @@
 # adoption/views.py
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
+from django.http import Http404, HttpResponse
 from django.shortcuts import redirect, render
 from .models import Book, Author
 
 from .forms import NewBookForm
+
+# change settings DEBUG = False ALLOWED_HOSTS = ['*'] to test
+def not_found_404(request, exception):
+    data = { 'err': exception }
+    return render(request, '404.html', data)
 
 def index(req):
     return render(req, 'base.html') 
