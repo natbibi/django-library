@@ -41,7 +41,7 @@ def create(request):
         book = NewBookForm(request.POST)
         if book.is_valid():
             book_id = book.save().id
-            return redirect("bookshelf-books")
+            return redirect("bookshelf-show", id=book_id)
     else:
         form = NewBookForm()
     data = {'form': form}

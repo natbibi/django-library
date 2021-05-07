@@ -25,6 +25,7 @@ A fullstack project for a collection of books and authors built in django. Users
 7. Styling! 
 8. Add a form for adding new books, which allows you to pick the author  
 9. Add button at /books which for new books, linking to the correct page  
+10. Create 404 Not Found, 500 internal server
 
 ## Bugs
 - [ ] No bugs here!
