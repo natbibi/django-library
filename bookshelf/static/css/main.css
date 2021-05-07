@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+* { box-sizing: border-box; }
+
+html, body { 
+    margin: 0; 
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3NoZWxmfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav { 
+    width: 100vw;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 161, 59);
+}
+
+.linkset > * { margin: 0 20px; color: white; font-size: 0.8rem;}
+
+.right { text-align: right;}
+.left { text-align: left;}
+
+a { cursor: pointer; text-decoration: none; }
+
+nav a:hover { text-shadow: 1px 0px 10px rgba(0, 0, 0, 0.9); }
+
+main { 
+    width: 90%;
+    padding: 1rem; 
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+ul li { list-style: none; }
+
+li a { color: indianred; }
+
+input, button {
+    display: block;
+    padding: 10px 0;
+    font-family: var(--primary-font);
+    width: 100%;
+    text-align: center;
+}
+
+.helptext, form > ul { opacity: 0.6; font-size: 0.8rem;}
+
+#about { text-align: justify; }
+
+#alert { 
+    padding: 1rem;
+    background-color: indianred;
+    color: black;
+    opacity: 0.3;
+    text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+    .linkset > * {font-size: 1rem;}
+}
