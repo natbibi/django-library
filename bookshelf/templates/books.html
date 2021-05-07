@@ -8,6 +8,8 @@
         {{ book.name }}
     </li>
     {% endfor %}
+
+    <a href="{% url 'book-create' %}"><button>New Book</button></a>
 </ul>
 
 {% endblock content %}
